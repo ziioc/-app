@@ -1,0 +1,29 @@
+name: auto_ledger
+description: 支付后自动提醒、一键归类支出的轻量记账 App（V1 安卓）
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  # 状态管理：让页面在数据变化时自动刷新
+  provider: ^6.1.2
+  # 本地数据库：账单存在手机本机
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  # 通知栏弹窗
+  flutter_local_notifications: ^17.2.3
+  # 日期与金额格式化
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
